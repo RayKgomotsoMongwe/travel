@@ -1,0 +1,149 @@
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  user-select: none;           /* standard */
+  -webkit-user-select: none;   /* Chrome, Safari */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+}
+
+.header-text {
+    text-align: center;
+}
+
+/* Hero section */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('images/maybe3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+}
+
+
+.hero h1 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Content below hero */
+.content {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Navbar styling */
+.navbar {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.30rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  font-weight: 600;
+  top: 0;
+  right: 0;
+  padding: 0.625rem 1.25rem;
+  display: flex;
+  position: absolute;
+  gap: 0.9375rem;
+  margin: 2.5rem;
+  width: 100%;
+  z-index: 15;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  border-radius: 0.625rem;
+  cursor: pointer;
+}
+
+.navbar .navbar-brand {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.70rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  margin-left: 9rem; /* adjust as needed */
+}
+
+/* About */
+#about {
+  font-family: "Poppins", sans-serif;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 5rem 1.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hide navbar on small devices */
+@media (max-width: 999px) {  /* adjust breakpoint as needed */
+  .navbar {
+    display: none;
+  }
+}
