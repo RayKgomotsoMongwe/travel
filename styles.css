@@ -115,16 +115,112 @@ body {
   padding: 5rem 1.25rem;
 }
 
+/* explore */
+.explore {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #f8f8f8;
+}
 
+.explore .header-text {
+  margin: 0.5rem 0;
+}
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* fixed min width */
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
 
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 360px; /* fixed height for uniform cards */
+}
 
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
 
+.card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
 
+.card p {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+  flex-grow: 1; /* makes text fill remaining space */
+}
 
+.card:hover {
+  transform: translateY(-5px); /* hover effect for all cards */
+}
 
+/* Hidden cards initially */
+.card.hidden {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
+/* When revealed */
+.card.show {
+  display: flex; /* keep flex layout consistent */
+  opacity: 1;
+  transform: translateY(0);
+}
 
+.see-more {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  background: #C8D5B9;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.see-more:hover {
+  background: #AFC39A;
+}
+
+/* Hidden cards initially */
+.card.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Revealed cards */
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Hover effect stays the same */
+.card:hover {
+  transform: translateY(-5px);
+}
 
 
 
