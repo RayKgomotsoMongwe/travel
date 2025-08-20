@@ -23,7 +23,7 @@ body {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background-image: url('images/maybe3.jpg');
+  background-image: url('images/jochen-van-wylick-D-cq8fHm0Lg-unsplash (2).jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -120,7 +120,8 @@ body {
   font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 4rem 2rem;
-  background: #f8f8f8;
+  /*background: #f8f8f8;*/
+  background: #eee;
 }
 
 .explore .header-text {
@@ -191,7 +192,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   border: none;
-  background: #C8D5B9;
+  background: #728064;
   color: white;
   border-radius: 8px;
   cursor: pointer;
@@ -221,6 +222,87 @@ body {
 .card:hover {
   transform: translateY(-5px);
 }
+
+.card.card-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* dark overlay */
+}
+
+.card.card-img h2,
+.card.card-img p {
+  position: relative; /* keep text above overlay */
+}
+
+/* hidden filler image ensures consistent height */
+.filler-img {
+  visibility: hidden;
+  width: 100%;
+  height: 220px; /* adjust height of image area */
+  display: block;
+}
+
+/* card base */
+.card.card-img {
+  position: relative;
+  border-radius: 12px;
+  color: white;
+  overflow: hidden;
+  padding: 1rem;
+  background-size: cover;       /* make sure bg fills card */
+  background-position: center;  /* center image */
+  background-repeat: no-repeat; /* no tiling */
+}
+
+/* dark overlay for readability */
+.card.card-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.card.card-img h2,
+.card.card-img p {
+  position: relative;
+  z-index: 1;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+/* individual background images */
+.kruger         { background-image: url("images/kruger10.avif"); }
+.mopani         { background-image: url("images/maybe1.jpg"); }
+.hoedspruit     { background-image: url("images/placeholder3.jpg"); }
+.moholoholo     { background-image: url("images/placeholder4.jpg"); }
+.agatha         { background-image: url("images/placeholder5.jpg"); }
+.blyde          { background-image: url("images/placeholder6.jpg"); }
+.makuya         { background-image: url("images/placeholder7.jpg"); }
+.debengeni      { background-image: url("images/placeholder8.jpg"); }
+.magoebaskloof  { background-image: url("images/placeholder9.jpg"); }
+.quad           { background-image: url("images/placeholder10.jpg"); }
+.modjadji       { background-image: url("images/placeholder11.jpg"); }
+.museum         { background-image: url("images/placeholder12.jpg"); }
+.tzaneen        { background-image: url("images/placeholder13.jpg"); }
+.phalaborwa     { background-image: url("images/placeholder14.jpg"); }
+.lalibela       { background-image: url("images/placeholder15.jpg"); }
+
+
+.card.card-img a {
+  display: block;          /* link fills the card */
+  height: 100%;
+  text-decoration: none;   /* remove underline */
+  color: inherit;          /* keep text color */
+  cursor: pointer;         /* pointer on hover */
+  transition: transform 0.3s ease;
+}
+
+.card.card-img a:hover {
+  transform: scale(1.03); /* subtle zoom */
+}
+
+
 
 
 
