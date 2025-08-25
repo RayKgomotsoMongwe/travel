@@ -23,9 +23,9 @@ body {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background-image: url('images/about-background2.jpg');
+  background-image: url('images/maybe3.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -302,6 +302,45 @@ body {
   transform: scale(1.03); /* subtle zoom */
 }
 
+/* stay */
+.stay {
+  width: 100%;
+  height: 45vh;
+  background-image: url('images/about10.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+}
+
+.stay h1, .stay h5 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.stay-btn {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  background: #728064;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.stay-btn:hover {
+  background: #AFC39A;
+}
 
 
 
