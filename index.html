@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@92,300..700&display=swap" rel="stylesheet">
@@ -225,10 +227,27 @@
 </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h1>Contact Us</h1>
-    <p>Get in touch for more information.</p>
-  </section>
+   <section class="contact" id="contact">
+            <div class="contact-container">
+              <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p><i class="icon fa-solid fa-envelope"></i> <a href="http://placeholder" target="_blank">Gmail</a></p>
+                <p><i class="icon fa-solid fa-phone"></i> +27 63 654 1663</p>
+                <p><i class="icon fab fa-linkedin"></i> <a href="https://linkedin.com/in/placeholder" target="_blank">linkedin</a></p>
+              </div>
+
+              <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <p>Feel free to drop us a line below!</p>
+                <form action="https://formsubmit.co/raykgomotsomongwe@gmail.com" method="POST">
+                  <input type="text" placeholder="Your Name" name="name" required />
+                  <input type="email" placeholder="Your Email" name="email" required />
+                  <textarea placeholder="Typing your message here..." name="message" required></textarea>
+                  <button type="submit">Send</button>
+                </form>
+              </div>
+            </div>
+          </section>
 </body>
 
 </html>
